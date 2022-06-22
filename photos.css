@@ -1,0 +1,19 @@
+img {
+    width: 30%;
+    height: 30%;
+    margin: 1.5%;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient( BLUE, red, GREEN, YELLOW, purple);
+}
+
+nav {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 3px dashed #b0aebb;
+    margin: 1.5%;
+    padding: .1em 0;
+    width: 30%;
+}

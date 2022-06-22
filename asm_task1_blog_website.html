@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=IBM+Plex+Sans:wght@300;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>asm_task1_blog_website_clone</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="main_logo">
+         <img src="asm_task1\pictures\logo.png" alt="atg logo">
+         </span>
+        <form action="" class="search_bar">
+            <button type="submit" class="srch_button"><img src="asm_task1\pictures\search_icon.png" alt="search_icon"></button><input type="text" placeholder="Search for your favourite groups in ATG">
+        </form>
+        <section class="create_account">
+            <p> Create account.<a id="show-log">Its Free!</a>
+                <img src="asm_task1\pictures\dropdown_icon.png" alt="dropdown_icon">
+            </p>
+        </section>
+    </nav>
+    <main>
+        <img src="asm_task1\main.png" alt="main_background ">
+        <!-- <img src="asm_task1\pictures\Rectangle 3.png" alt="" id="gradient"> -->
+        <div id="main_text ">
+            <h1>Computer Engineering</h1>
+            <h4>142,765 Computer Engineers follow this</h4>
+        </div>
+    </main>
+    <section class="navbar2">
+        <ul class="navbar2-items">
+            <li class="nav2-item1">
+                <a href="#" class="nav-link" area-current="page">All Posts(32)</a>
+            </li>
+            <li class=" nav2-item2 ">
+                <a href="#" class="nav-link" area-current="page">Article</a>
+            </li>
+            <li class="nav2-item3 ">
+                <a href="#" class="nav-link" area-current="page">Event</a>
+            </li>
+            <li class="nav2-item4 ">
+                <a href="#" class="nav-link" area-current="page">Education</a>
+            </li>
+            <li class="nav2-item5 ">
+                <a href="#" class="nav-link" area-current="page"> Job</a>
+            </li>
+        </ul>
+        <span class="nav2-buttons">
+         <button type="button " name="Write_Post " class="write_post_button "><a href="#" class="navil"> Write a Post</a><img src="asm_task1\pictures\dropdown_icon.png " alt="drpdown_post "></button>
+         <button type="button " name="Join_Group " id="show-login" class="join_group_button "><img src="asm_task1\pictures\group_add-24px.png " alt="join_grp_icon "><a href="#" class="navi">Join Group</a></button>
+         </span>
+    </section>
+    <section class="posts">
+        <div class="user_posts">
+            <span class="post1">
+               <img src="asm_task1\pictures\post1.png" alt="post1_pic" class="post_picc">
+               <p class="post_title">
+               <h3> ✍️ Article</h3>
+               </p>
+               <header class="heading">
+                  <h3>What if famous brands had regular fonts? Meet<br> Regular Brands!</h3>
+               </header>
+               <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn"><img src="asm_task1\pictures\post_drpdown.png" alt="drpdwn_options"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                     <a href="#">Edit</a>
+                     <a href="#">Report</a>
+                     <a href="#">others</a>
+                  </div>
+               </div>
+               <script>
+                  /* When the user clicks on the button   toggle between hiding and showing the dropdown content */
+                  function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                  }
+                  
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                  openDropdown.classList.remove('show');
+                              }
+                          }
+                      }
+                  }
+               </script>
+               <p>I've worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+               <div class="post_details">
+                  <span class="user">
+                     <img src="asm_task1\pictures\post1_user.png" alt="user1">
+                     <p>Sarthak Kamra</p>
+                  </span>
+            <span class="info">
+                     <img src="https://utkarshkeerti.github.io/ATG-Task-1/assets/icon/action/visibility_24px_outlined.svg" alt="views">
+                     <p id="vieee">1.4k views</p>
+                     <img src="asm_task1\pictures\share_icon.png" alt="share_icon" class="share_icon">
+                  </span>
+        </div>
+        </span>
+        <!------------------------- post1 finishes ----------------------------------->
+        <span class="post1">
+               <img src="asm_task1\pictures\post2.png" alt="post2_pic" class="post_picc">
+               <p class="post_title">
+               <h3> 🔬️ Education</h3>
+               </p>
+               <header class="heading">
+                  <h3>Tax Benefits for Investment under National Pension
+                     Scheme launched by Government
+                  </h3>
+               </header>
+               <div class="dropdown2">
+                  <button onclick="myFunction2()" class="dropbtn2"><img src="asm_task1\pictures\post_drpdown.png" alt="drpdwn_options2"></button>
+                  <div id="myDropdown2" class="dropdown-content2">
+                     <a href="#">Edit</a>
+                     <a href="#">Report</a>
+                     <a href="#">others</a>
+                  </div>
+               </div>
+               <script>
+                  /* When the user clicks on the button   toggle between hiding and showing the dropdown content */
+                  function myFunction2() {
+                      document.getElementById("myDropdown2").classList.toggle("show");
+                  }
+                  
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn2')) {
+                          var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+                          var j;
+                          for (j = 0; j < dropdowns2.length; j++) {
+                              var openDropdown2 = dropdowns2[j];
+                              if (openDropdown2.classList.contains('show')) {
+                                  openDropdown2.classList.remove('show');
+                              }
+                          }
+                      }
+                  }
+               </script>
+               <p>I've worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+               <div class="post_details">
+                  <span class="user">
+                     <img src="asm_task1\pictures\user2.png" alt="user1">
+                     <p>Sarah West</p>
+                  </span>
+        <span class="info">
+                     <img src="https://utkarshkeerti.github.io/ATG-Task-1/assets/icon/action/visibility_24px_outlined.svg" alt="views">
+                     <p id="vieee">1.4k views</p>
+                     <img src="asm_task1\pictures\share_icon.png" alt="share_icon" class="share_icon">
+                  </span>
+        </div>
+        </span>
+        <!-- --------------------------post2 finishes ----------------------------------->
+        <span class="post1">
+               <img src="asm_task1\pictures\post3.png" alt="post1_pic" class="post_picc">
+               <p class="post_title">
+               <h3> 🔬️ Education</h3>
+               </p>
+               <header class="heading">
+                  <h3>Tax Benefits for Investment under National Pension
+                     Scheme launched by Government
+                  </h3>
+                  <div id="general_info">
+                     <p ><img src="asm_task1\pictures\calender.png" alt="">
+                        Fri, 12 Oct, 2018
+                     </p>
+                     <p "><img src="asm_task1\pictures\locate.png" alt="">
+                        Ahmedabad, India
+                     </p>
+                  </div>
+               </header>
+               <div class="dropdown3">
+                  <button onclick="myFunction3()" class="dropbtn3"><img src="asm_task1\pictures\post_drpdown.png" alt="drpdwn_options"></button>
+                  <div id="myDropdown3" class="dropdown-content3">
+                     <a href="#">Edit</a>
+                     <a href="#">Report</a>
+                     <a href="#">others</a>
+                  </div>
+               </div>
+               <script>
+                  /* When the user clicks on the button   toggle between hiding and showing the dropdown content */
+                  function myFunction3() {
+                      document.getElementById("myDropdown3").classList.toggle("show");
+                  }
+                  
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn3')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content3");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                  openDropdown.classList.remove('show');
+                              }
+                          }
+                      }
+                  }
+               </script>
+               <div class="post_details">
+                  <span class="user">
+                     <img src="asm_task1\pictures\user3.png" alt="user3">
+                     <p>Ronal Jones</p>
+                  </span>
+        <span class="info">
+                     <img src="https://utkarshkeerti.github.io/ATG-Task-1/assets/icon/action/visibility_24px_outlined.svg" alt="views">
+                     <p id="vieee">1.4k views</p>
+                     <img src="asm_task1\pictures\share_icon.png" alt="share_icon" class="share_icon">
+                  </span>
+        </div>
+        </span>
+        </div>
+        <section class="location">
+            <div class="header-section">
+                <img src="asm_task1\pictures\locate.png" alt="locator_img">
+                <p class="addres"> Noida, India</p>
+                <img src="asm_task1\pictures\pencil.png" alt="pencil">
+            </div>
+            <div class="cautionn">
+                <img src="asm_task1\pictures\caution.png" alt="caution">
+                <p>Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+        </section>
+    </section>
+    <!-----------------------pop-up ----------------------------------------------->
+    <div class="center"></div>
+    <div class="popup">
+        <div class="tp">
+            <div class="close-button">&times;</div>
+            <div>
+                <p class="head-text">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                </p>
+            </div>
+        </div>
+        <div class="pop-left">
+            <div class="form">
+                <h1>
+                    <p> Create Account</p>
+                </h1>
+                <div class="getname">
+                    <input type="text" name="f_name" placeholder="First Name">
+                    <input type="text" name="l_name" placeholder="Last Name">
+                </div>
+                <div class="ml-pas">
+                    <input type "email" name="mail" placeholder="E-mail">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type=" text " name="conf_pass" placeholder="Confirm Password">
+                </div>
+                <div class="create-butn ">
+                    <p>Create Account</p>
+                </div>
+                <div class="fb ">
+                    <a href="# ">
+                        <p><img src="asm_task1\pictures\fb.png" alt="fb"> Sign up with Facebook</P>
+                    </a>
+                </div>
+                <div class="gogl ">
+                    <a href="# ">
+                        <p><img src="asm_task1\pictures\gogle.png" alt="ggl"> Sign up with Google</p>
+                    </a>
+                </div>
+            </div>
+            <div class="pop_img">
+                <div class="pop-side">
+                    <div class="sign-in-ask">
+                        <p>Already have an account?</p>
+                        <a href="# ">Sign In</a>
+                    </div>
+                    <div class="backg "><img src="asm_task1\pictures\loginback.png " alt="backg_img "></div>
+                    <p class="terms ">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#show-login").addEventListener("click", function() {
+            document.querySelector(".popup").classList.add("active");
+
+        });
+        document.querySelector("#show-log").addEventListener("click", function() {
+            document.querySelector(".popup").classList.add("active");
+
+        });
+        document.querySelector(".popup .close-button").addEventListener("click", function() {
+            document.querySelector(".popup").classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>
